@@ -1,2 +1,2 @@
 # bitrequest
-Webapp for accepting cryptocurrencies
+coming soon
