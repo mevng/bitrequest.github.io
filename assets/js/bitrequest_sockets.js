@@ -271,8 +271,7 @@ function web3_erc20_websocket(socket_node, thisaddress) {
 	var provider_url = socket_node.url,
 		if_id = get_infura_apikey(socket_node.url),
 		provider = provider_url + if_id;
-	console.log(if_id);
-	websocket = new WebSocket(provider_url);
+	websocket = new WebSocket(provider);
 	websocket.onopen = function(e) {
 		setTimeout(function() {
 			chainstate("Monitoring address");
