@@ -77,6 +77,4 @@ else {
 	echo $result;
 }
 
-//echo json_encode($postdata, JSON_PRETTY_PRINT);
-
 ?>
