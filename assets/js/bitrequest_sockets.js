@@ -269,7 +269,7 @@ function amberdata_eth_websocket(socket_node, thisaddress) {
 
 function web3_erc20_websocket(socket_node, thisaddress) {
 	var provider_url = socket_node.url,
-		if_id = get_infura_apikey(socket_node.url),
+		if_id = get_infura_apikey(provider_url),
 		provider = provider_url + if_id;
 	websocket = new WebSocket(provider);
 	websocket.onopen = function(e) {
