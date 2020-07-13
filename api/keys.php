@@ -3,7 +3,7 @@
 // enter api keys here
 
 $keys = array(
-	"coinmarketcap" => "bbb",
+	"coinmarketcap" => "ccc",
 	"fixer" => "",
 	"ethplorer" => "",
 	"blockcypher" => "",
