@@ -587,8 +587,8 @@ function continue_paymentfunction(payment) {
 					"method": "GET"
 				}
 			}).done(function(e) {
-				var data = result(e);
-				var ratesnode = (fiatapi == "fixer") ? data.rates :
+				var data = result(e),
+					ratesnode = (fiatapi == "fixer") ? data.rates :
 					(fiatapi == "coingecko") ? data.rates :
 					(fiatapi == "exchangeratesapi") ? data.rates :
 					(fiatapi == "currencylayer") ? data.quotes :
@@ -600,17 +600,17 @@ function continue_paymentfunction(payment) {
 						usdval,
 						localval;
 					if (fiatapi == "fixer") {
-						var usdval = ratesnode.USD;
+						var usdval = ratesnode.USD,
 							localval = ratesnode[localupper];
 					}
 					else if (fiatapi == "coingecko") {
 						var eurval = ratesnode.eur.value,
-							usdval = ratesnode.usd.value / eurval;
+							usdval = ratesnode.usd.value / eurval,
 							localval = ratesnode[fiatcurrency].value / eurval;
 					}
 					else if (fiatapi == "exchangeratesapi") {
-						var usdval = ratesnode.USD;
-							localval = ratesnode[localupper];
+						var usdval = ratesnode.USD,
+							localval = (localupper == "EUR") ? 1 : ratesnode[localupper];
 					}
 					else if (fiatapi == "currencylayer") {
 						var usdval = 1 / ratesnode.USDEUR,
