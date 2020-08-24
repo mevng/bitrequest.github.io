@@ -686,7 +686,7 @@ function cachecontrol() {
 						<br/><br/><div id='reset_settings' class='button'>\
 							<span>Reset app data</span>\
 						</div><br/><br/>\
-						<div id='pu_version'>" + apptitle + " PWA version " + version + "<br/>Php support = " + phpsupportglobal + "</div>\
+						<div id='pu_version'>" + apptitle + " PWA version " + version + "</div>\
 					</div>\
 					<div id='backupactions'>\
 						<div id='canceltheme' class='customtrigger'>OK</div>\

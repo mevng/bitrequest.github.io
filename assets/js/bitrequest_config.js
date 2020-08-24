@@ -501,12 +501,12 @@ var app_settings = [
 	   	"infura": null,
 	   	"amberdata": null
 	},
-	{
+	/*{
 		"id": "themesettings",
 	    "heading": "Choose theme",
 	   	"selected": "default.css",
 	   	"icon": "icon-paint-format"
-	},
+	},*/
 	{
 		"id": "contactform",
 		"heading": "Contact form",

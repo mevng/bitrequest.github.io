@@ -1712,6 +1712,7 @@ input:invalid {
 	-ms-transition:inherit;
 	transition:inherit;
 	color:#ccc8c8;
+	touch-action: none;
 }
 
 .brstatuspanel {

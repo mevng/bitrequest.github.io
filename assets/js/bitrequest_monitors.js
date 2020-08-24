@@ -1063,8 +1063,8 @@ function historic_data_title(ccsymbol, ccval, historic, fromcache) {
 		lc_val = ccval * lc_ccrate,
 		cc_upper = (ccsymbol) ? ccsymbol.toUpperCase() : ccsymbol,
 		lc_upper = (lcsymbol) ? lcsymbol.toUpperCase() : lcsymbol,
-		localrate = (lc_upper == "USD") ? "" : cc_upper + "-" + lc_upper + ": " + lc_ccrate.toFixed(2) + "\n" + lc_upper + "-USD: " + lc_usd_rate.toFixed(2) + "\n";
-		return "Historic data (" + fulldateformat(new Date((timestamp - timezone)), "en-us") + "):\nFiatvalue: " + lc_val.toFixed(2) + " " + lc_upper + "\n" + cc_upper + "-USD: " + price.toFixed(2) + "\n" + localrate + "Fetched: " + fetched + "\nCached: " + fromcache + "\nAPI source: " + fiatsrc + " / " + src;
+		localrate = (lc_upper == "USD") ? "" : cc_upper + "-" + lc_upper + ": " + lc_ccrate.toFixed(2) + "\n" + lc_upper + "-USD: " + lc_usd_rate.toFixed(2);
+		return "Historic data (" + fulldateformat(new Date((timestamp - timezone)), "en-us") + "):\nFiatvalue: " + lc_val.toFixed(2) + " " + lc_upper + "\n" + cc_upper + "-USD: " + price.toFixed(2) + "\n" + localrate + "\nSource: " + fiatsrc + "/" + src;
 }
 
 function compareamounts(rd) {
