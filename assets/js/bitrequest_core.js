@@ -541,7 +541,10 @@ function setlocales() {
 }
 
 function settheme() {
-	$("#theme").attr("href", "assets/styles/themes/" + $("#themesettings").data("selected"));
+	var theme_settings = $("#themesettings").data("selected");
+	if (theme_settings) {
+		$("#theme").attr("href", "assets/styles/themes/" + theme_settings);
+	}
 }
 
 // ** Pincode **
