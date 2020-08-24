@@ -1,4 +1,4 @@
-var version = 0.028,
+var version = 0.029,
 	apptitle = "Bitrequest",
 	hostname = "app.bitrequest.io", // change if self hosted
 	root = "/",
